@@ -345,3 +345,9 @@ iRobot is testing out a new robot design. The proposed new robots differ in that
 Write a new class RandomWalkRobot that inherits from Robot (like StandardRobot) but implements the new movement strategy. RandomWalkRobot should have the same interface as StandardRobot.
 
 Test out your new class. Perform a single trial with the StandardRobot implementation and watch the visualization to make sure it is doing the right thing. Once you are satisfied, you can call runSimulation again, passing RandomWalkRobot instead of **StandardRobot**.
+
+## Problem 6: Data Plotting
+Now, you'll use your simulation to answer some questions about the robots' performance.
+
+In order to do this problem, you will be using a Python tool called PyLab. 
+
