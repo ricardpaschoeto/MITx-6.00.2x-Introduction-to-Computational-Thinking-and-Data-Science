@@ -328,3 +328,20 @@ where **room** is a RectangularRoom object and robots is a list of Robot objects
 The resulting animation will look like this:
 
 ![alt text](https://github.com/ricardpaschoeto/MITx-6.00.2x-Introduction-to-Computational-Thinking-and-Data-Science/blob/master/PS02/pset2/files_ps07_files_visualization.png?raw=true)
+
+The visualization code slows down your simulation so that the animation doesn't zip by too fast (by default, it shows 5 time-steps every second). Naturally, you will want to avoid running the animation code if you are trying to run many trials at once (for example, when you are running the full simulation).
+
+For purposes of debugging your simulation, you can slow down the animation even further. You can do this by changing the call to RobotVisualization, as follows:
+
+    anim = ps2_visualize.RobotVisualization(num_robots, width, height, delay)
+    
+The parameter delay specifies how many seconds the program should pause between frames. The default is 0.2 (that is, 5 frames per second). You can increase this value to make the animation slower or decrease it (0.01 is reasonable) to see many robots cleaning the room at a faster frame rate.
+
+For problem 6, we will make calls to runSimulation() to get simulation data and plot it. However, you don't want the visualization getting in the way. If you choose to do this visualization exercise, before you get started on problem 5 (and before you submit your code in submission boxes), **make sure to comment the visualization code out of runSimulation().**
+
+## Problem 5: RandomWalkRobot Class
+iRobot is testing out a new robot design. The proposed new robots differ in that they change direction randomly **after every time step**, rather than just when they run into walls. You have been asked to design a simulation to determine what effect, if any, this change has on room cleaning times.
+
+Write a new class RandomWalkRobot that inherits from Robot (like StandardRobot) but implements the new movement strategy. RandomWalkRobot should have the same interface as StandardRobot.
+
+Test out your new class. Perform a single trial with the StandardRobot implementation and watch the visualization to make sure it is doing the right thing. Once you are satisfied, you can call runSimulation again, passing RandomWalkRobot instead of **StandardRobot**.
