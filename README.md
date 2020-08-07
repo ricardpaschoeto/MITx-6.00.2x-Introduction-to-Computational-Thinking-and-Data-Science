@@ -319,7 +319,7 @@ Here's how to run the visualization:
 
     anim.update(room, robots)
     
-where ##room## is a RectangularRoom object and robots is a list of Robot objects representing the current state of the room and the robots in the room.
+where **room** is a RectangularRoom object and robots is a list of Robot objects representing the current state of the room and the robots in the room.
 
 3.When the trial is over, call the following method:
 
