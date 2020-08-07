@@ -303,3 +303,27 @@ class Position(object):
 You should also check your simulation's output for speeds other than 1.0. One way to do this is to take the above test cases, change the speeds, and make sure the results are sensible.
 
 For further testing, see the next page in this problem set about the optional way to use visualization methods. Visualization will help you see what's going on in the simulation and may assist you in debugging your code.
+
+## Optional: Visualizing Robots
+We've provided some code to generate animations of your robots as they go about cleaning a room. These animations can also help you debug your simulation by helping you to visually determine when things are going wrong.
+
+Here's how to run the visualization:
+
+1.In your simulation, at the beginning of a trial, insert the following code to start an animation:
+
+    anim = ps2_visualize.RobotVisualization(num_robots, width, height)
+    
+(Pass in parameters appropriate to the trial, of course.) This will open a new window to display the animation and draw a picture of the room.
+
+2.Then, during each time-step, before the robot(s) move, insert the following code to draw a new frame of the animation:
+
+    anim.update(room, robots)
+    
+where ##room## is a RectangularRoom object and robots is a list of Robot objects representing the current state of the room and the robots in the room.
+
+3.When the trial is over, call the following method:
+
+    anim.done()
+    
+The resulting animation will look like this:
+
