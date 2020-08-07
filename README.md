@@ -118,3 +118,4 @@ The following simplified model of a single robot moving in a square 5x5 room sho
 
 The robot starts out at some random position in the room, and with a random direction of motion. The illustrations below show the robot's position (indicated by a black dot) as well as its direction (indicated by the direction of the red arrowhead).
 
+![alt text](https://github.com/ricardpaschoeto/MITx-6.00.2x-Introduction-to-Computational-Thinking-and-Data-Science/blob/master/iRobot.png?raw=true)
