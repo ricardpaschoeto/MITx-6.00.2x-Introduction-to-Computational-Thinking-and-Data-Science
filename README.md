@@ -327,3 +327,4 @@ where **room** is a RectangularRoom object and robots is a list of Robot objects
     
 The resulting animation will look like this:
 
+![alt text](https://github.com/ricardpaschoeto/MITx-6.00.2x-Introduction-to-Computational-Thinking-and-Data-Science/blob/master/PS02/pset2/files_ps07_files_visualization.png?raw=true)
