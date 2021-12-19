@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['C:\\Users\\paschoeto\\Desktop\\nd_autonomous car\\01_deep_learning_for_computer_vision\\04_Advanced Computer Vision\\lane_histogram.py']
+recent_files = ['C:\\Users\\paschoeto\\Desktop\\nd_autonomous car\\01_deep_learning_for_computer_vision\\Project_01\\CarND-LaneLines-P1-master\\Helper.py', 'C:\\Users\\paschoeto\\Desktop\\nd_autonomous car\\01_deep_learning_for_computer_vision\\Project_01\\CarND-LaneLines-P1-master\\Pipeline.py', 'C:\\Users\\paschoeto\\Desktop\\nd_autonomous car\\01_deep_learning_for_computer_vision\\Project_01\\CarND-LaneLines-P1-master\\Main.py']
 
