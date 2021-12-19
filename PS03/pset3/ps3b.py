@@ -1,7 +1,6 @@
 # Problem Set 3: Simulating the Spread of Disease and Virus Population Dynamics 
 
 import random
-from matplotlib.pyplot import legend
 import numpy as np
 import pylab
 
@@ -279,9 +278,8 @@ class ResistantVirus(SimpleVirus):
         returns: True if this virus instance is resistant to the drug, False
         otherwise.
         """
-        return self.resistances[drug]        
-
-
+        return self.resistances.get(drug, False)
+        
     def reproduce(self, popDensity, activeDrugs):
 
         for drug in activeDrugs:
@@ -300,8 +298,8 @@ class ResistantVirus(SimpleVirus):
 
         return offspring
         
-virus = ResistantVirus(0.0, 1.0, {"drug1":True, "drug2":False}, 0.0)
-virus.reproduce(0, [])          
+#virus = ResistantVirus(0.0, 1.0, {"drug1":True, "drug2":False}, 0.0)
+#virus.reproduce(0, [])          
 
 class TreatedPatient(Patient):
     """
